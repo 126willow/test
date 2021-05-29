@@ -1,0 +1,348 @@
+/* css reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-transform: uppercase;
+	box-sizing: border-box;
+    font-family: 'lato', '나눔고딕', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+/*	overflow-x: hidden;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+select {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* FORM RESET */
+input {
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+    outline: none;
+}
+
+header {
+    line-height: 24px;
+    color: #fff;
+}
+
+body {
+    font-weight: normal;
+	box-sizing: border-box;
+}
+
+
+body,
+header,
+footer {
+    
+    font-size: 1.4rem;
+}
+
+
+
+
+* {
+    border: 1px solid red !important;
+}
+
+
+/* ##########################################
+                제품 리스트
+############################################# */
+.productList_container::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ##########################################
+            재사용 - 상단 카테고리 버튼
+############################################# */
+.productList_top_categories_btn{
+    height: 32px;
+    border: 1px solid #e6e6e6;
+    
+    margin: 6px 6px 0 0;
+    
+    float: left;
+}
+
+.productList_top_categories_name{
+    font-size: 1.2rem;
+    
+    padding: 0 12px;
+}
+
+.productList_top_categories_btn:hover {background-color: #e6e6e6;}
+
+.productList_top_categories_btn:active {background-color: #000;}
+
+.productList_top_categories_name:active {color: #fff;}
+
+/* ============== [ 상단 카테고리 ] ================ */
+
+.productList_title{
+    font-size: 1.6rem;
+    font-weight: 900;
+    
+    text-align: center;
+    
+    padding: 28px 0 6px 0;
+}
+
+.productList_top_categories{
+    padding: 14px 16px; 
+}
+
+.productList_top_categories_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ##########################################
+            재사용 - 정렬 버튼 & 셀렉트
+############################################# */
+.productList_card_array_btn{
+    width: 32px;
+    height: 32px;
+    
+    float: left;
+    
+    margin-right: 12px;
+}
+
+/* ============== [ 정렬 버튼 & 셀렉트 ] ================ */
+.productList_card_array {padding: 8px 0;}
+
+.productList_card_array_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_array_select_wrap{
+    float: right;
+}
+
+.productList_card_array_select_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_array_select_box{
+    width: 176px;
+    height: 32px;
+    padding: 0 12px;
+    
+    float: left;
+}
+
+.productList_card_array_select_btn{
+    width: 32px;
+    height: 32px;
+    
+    text-align: center;
+    
+    float: right;
+}
+
+.productList_card_array_select_btn .material-icons{
+    font-size: 2.4rem;
+    line-height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##########################################
+					모바일
+############################################# */
+
+@mediaall all and(min-width: 360px){
+    
+}
+
+
+@media all and(min-width: 1024px){
+	
+	.productList_container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.productList_container::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	
+    /* ##########################################
+					제품 리스트
+	############################################# */
+
+	/* ##########################################
+				재사용 - 상단 카테고리 버튼
+	############################################# */
+	.productList_top_categories_btn{
+		height: 36px;
+/*		border: 1px solid #e6e6e6;*/
+
+		margin: 0;
+
+		float: left;
+	}
+
+	.productList_top_categories_name{
+		font-size: 1.2rem;
+
+		padding: 0 12px;
+	}
+
+	.productList_top_categories_btn:hover {background-color: #e6e6e6;}
+
+	.productList_top_categories_btn:active {background-color: #000;}
+
+	.productList_top_categories_name:active {color: #fff;}
+
+	/* ============== [ 상단 카테고리 ] ================ */
+
+	.productList_title{
+		font-size: 3.2rem;
+		font-weight: 900;
+
+		text-align: center;
+
+		padding: 28px 0 6px 0;
+	}
+
+	.productList_top_categories{
+		padding: 14px 16px; 
+	}
+
+	.productList_top_categories_wrap::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/* ##########################################
+				재사용 - 정렬 버튼 & 셀렉트
+	############################################# */
+	.productList_card_array_btn{
+		width: 32px;
+		height: 32px;
+
+		float: left;
+
+		margin-right: 12px;
+	}
+
+	/* ============== [ 정렬 버튼 & 셀렉트 ] ================ */
+	.productList_card_array {padding: 8px 0;}
+
+	.productList_card_array_wrap::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.productList_card_array_select_wrap{
+		float: right;
+	}
+
+	.productList_card_array_select_wrap::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.productList_card_array_select_box{
+		width: 176px;
+		height: 32px;
+		padding: 0 12px;
+
+		float: left;
+	}
+
+	.productList_card_array_select_btn{
+		width: 32px;
+		height: 32px;
+
+		text-align: center;
+
+		float: right;
+	}
+
+	.productList_card_array_select_btn .material-icons{
+		font-size: 2.4rem;
+		line-height: 32px;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

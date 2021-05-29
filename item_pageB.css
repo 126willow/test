@@ -1,0 +1,139 @@
+/* css reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-transform: uppercase;
+	box-sizing: border-box;
+    font-family: 'lato', '나눔고딕', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+/*	overflow-x: hidden;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+select {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* FORM RESET */
+input {
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+    outline: none;
+}
+
+header {
+    line-height: 24px;
+    color: #fff;
+}
+
+body {
+    font-weight: normal;
+	box-sizing: border-box;
+	
+    position: relative;
+}
+
+body,
+header,
+footer {font-size: 1.4rem;}
+
+* {
+    border: 1px solid red !important;
+}
+
+
+/* ##########################################
+				상품 상세페이지
+############################################# */
+
+
+/* 상세페이지 B파트 */
+/* 상세페이지 B파트 타이틀 */
+.productList_itemPage_partB_title_wrap{
+	width: 100%;
+	height: 40px;
+}
+
+.productList_itemPage_partB_title_wrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.productList_itemPage_partB_title{
+	font-size: 2.4rem;
+	font-weight: 900;
+	text-transform: capitalize;
+	vertical-align: top;
+	
+	float: left;
+}
+
+.productList_itemPage_partB_favorite_btn{
+	width: 40px;
+	height: 40px;
+	
+	vertical-align: top;
+	
+	float: right;
+}
+
+.productList_itemPage_partB_favorite_btn .material-icons{
+	text-align: center;
+	line-height: 40px;
+}
+
+.productList_itemPage_partB_sub_title {
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1165 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./index_02.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="./jquery/jquery.js"></script>
+	<script type="text/javascript" href="./index.js">
+		$(function() {
+			$(".index_top_banner_next").on("click", function() {
+				$(".index_top_banner .index_top_banner_list").animate({
+					"left": "-=1920px"
+				}, 860);
+
+				var dotIndex = $(".index_top_banner_dots").index($(".dots_on"));
+				var dotNextIndex = dotIndex + 1;
+
+				$(".index_top_banner_dots").eq(dotIndex).removeClass("dots_on");
+				$(".index_top_banner_dots").eq(dotNextIndex).addClass("dots_on");
+				console.log("dotIndex", dotIndex);
+				console.log("dotNextIndex", dotNextIndex);
+
+				if (dotIndex == 0) {
+					$(".index_top_banner_prev").fadeIn();
+				} else if (dotIndex == 3) {
+					$(".index_top_banner_next").fadeOut();
+				}
+			})
+
+			$(".index_top_banner_prev").on("click", function() {
+				$(".index_top_banner .index_top_banner_list").animate({
+					"left": "+=1920px"
+				}, 860);
+
+				var dotIndex = $(".index_top_banner_dots").index($(".dots_on"));
+				var dotNextIndex = dotIndex - 1;
+				console.log("dotIndex", dotIndex);
+				console.log("dotNextIndex", dotNextIndex);
+
+				$(".index_top_banner_dots").eq(dotIndex).removeClass("dots_on");
+				$(".index_top_banner_dots").eq(dotNextIndex).addClass("dots_on");
+
+				if (dotIndex == 4) {
+					$(".index_top_banner_next").fadeIn();
+				}
+				else if(dotIndex == 1){
+					$(".index_top_banner_prev").fadeOut();
+				}
+			})
+		})
+	</script>
+</head>
+
+<body class="index_body">
+
+	<!--#############################################
+						모바일
+	###########################################--> 
+	<!--                                               -->
+	<!--============== [ 헤더 z-1 ] ================-->
+	<!--                                               -->
+
+	<!-- 모바일 - (인덱스, 어바웃)  -->
+	<header class="mobile_index_header">
+
+		<nav class="mobile_index_header_outer">
+			<!-- 모바일 - 왼쪽 버튼 z-3-->
+			<div class="mobile_index_header_left_nav_outer">
+				<button class="mobile_index_header_nav_berger">
+					<i class="material-icons">menu</i>
+				</button>
+
+			</div>
+
+
+			<!-- 모바일 - 로고 -->
+			<h1 class="mobile_index_header_logo_outer">
+				<a href="#" class="mobile_index_header_logo">
+					<img src="../zeplin_img/index/logo/Bang_and_Olufsen_white.svg" alt="Bang & Olufsen" style="width: 150px;">
+				</a>
+			</h1>
+
+			<!-- 모바일 - 오른쪽 버튼 -->
+			<button class="mobile_index_header_right_nav_outer">
+				<i class="material-icons">power_settings_new</i>
+			</button>
+		</nav>
+	</header>
+	
+	<!--#############################################
+						태블릿
+	###########################################--> 
+	<!--                                               -->
+	<!--============== [ 헤더 z-1 ] ================-->
+	<!--                                               -->
+
+	<!-- 태블릿 - (인덱스, 어바웃)  -->
+	<header class="tablet_index_header">
+
+		<nav class="tablet_index_header_outer">
+			<!-- 태블릿 - 왼쪽 버튼 z-3-->
+			<div class="tablet_index_header_left_nav_outer">
+				<button class="tablet_index_header_nav_berger">
+					<i class="material-icons">menu</i>
+				</button>
+				<a href="#" class="tablet_index_header_nav_about">
+					about us
+				</a>
+			</div>
+
+
+			<!-- 태블릿 - 로고 -->
+			<h1 class="tablet_index_header_logo_outer">
+				<a href="#" class="tablet_index_header_logo">
+					<img src="../zeplin_img/index/logo/Bang_and_Olufsen_white.svg" alt="Bang & Olufsen" style="width: 150px;">
+				</a>
+			</h1>
+
+			<!-- 태블릿 - 오른쪽 버튼 -->
+			<button class="tablet_index_header_right_nav_outer">
+				<i class="material-icons">shopping_cart</i>
+				<i class="material-icons">power_settings_new</i>
+			</button>
+		
+		</nav>
+	</header>
+
+<!--#############################################
+						데스크탑
+	###########################################-->
+	<!--                                               -->
+	<!--============== [ 헤더 z-1 ] ================-->
+	<!--                                               -->
+
+	<!-- 데스크탑 - (인덱스, 어바웃)  -->
+	<header class="desktop_index_header">
+
+		<nav class="desktop_index_header_outer">
+			<!-- 데스크탑 - 왼쪽 버튼 z-3-->
+			<div class="desktop_index_header_left_nav_outer">
+				<button class="desktop_index_header_nav_berger">
+					<i class="material-icons">menu</i>
+				</button>
+				<a href="#" class="desktop_index_header_nav_about">
+					about us
+				</a>
+			</div>
+
+
+			<!-- 데스크탑 - 로고 -->
+			<h1 class="desktop_index_header_logo_outer">
+				<a href="#" class="desktop_index_header_logo">
+					<img src="../zeplin_img/index/logo/Bang_and_Olufsen_white.svg" alt="Bang & Olufsen" style="width: 170px;">
+				</a>
+			</h1>
+
+			<!-- 데스크탑 - 오른쪽 버튼 -->
+			<ul class="desktop_index_header_right_nav_outer">
+				<li><a href="#">speaker</a></li>
+				<li><a href="#">headphone</a></li>
+				<li><a href="#">tv</a></li>
+				<li><a href="#">accessory</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  	<!--                                               -->
+	<!--============== [ top 버튼 ] ================-->
+	<!--                                               -->
+   
+    <!-- 페이지 상단으로 이동 버튼 z-3 --> 
+ <!--   <span class="index_main_top_btn">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </span>-->
+
+	<!--                                               -->
+	<!--============== [ 인덱스 ] ================-->
+	<!--                                               -->
+    
+    <!-- 인덱스 - 배너 -->
+     <div class="index_top_banner_outer">
+        <!-- 인덱스 - 메인 배너 리스트 z-0 -->
+        <ul class="index_top_banner">
+           <li class="index_top_banner_list" style="left: 0px; background-image: url(../zeplin_img/index/banner/index_top_banner01.jpg);">
+					<div class="index_top_banner_container">
+						<div class="index_top_banner_container_warp">
+							<div class="index_top_banner_text">
+								<p class="index_top_banner_sub_title">the</p>
+								<p class="index_top_banner_title01">variation is</p>
+								<p class="index_top_banner_title02">infinite</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="index_top_banner_list" style="left: 1920px; background-image: url(../zeplin_img/index/banner/index_top_banner07.jpg);">
+					<div class="index_top_banner_container">
+						<div class="index_top_banner_container_warp">
+							<div class="index_top_banner_text">
+								<p class="index_top_banner_title01">relax with</p>
+								<p class="index_top_banner_title02">listen to sound</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="index_top_banner_list" style="left: 3840px; background-image: url(../zeplin_img/index/banner/index_top_banner02.jpg);">
+					<div class="index_top_banner_container">
+						<div class="index_top_banner_container_warp">
+							<div class="index_top_banner_text">
+								<p class="index_top_banner_title01">reflect on your</p>
+								<p class="index_top_banner_title02">inner self</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="index_top_banner_list" style="left: 5760px; background-image: url(../zeplin_img/index/banner/index_top_banner03.jpg);">
+					<div class="index_top_banner_container">
+						<div class="index_top_banner_container_warp">
+							<div class="index_top_banner_text">
+								<p class="index_top_banner_sub_title">transformation.</p>
+								<p class="index_top_banner_title01">that is completely</p>
+								<p class="index_top_banner_title02">meaningful</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="index_top_banner_list" style="left: 7680px; background-image: url(../zeplin_img/index/banner/index_top_banner08.jpg);">
+					<div class="index_top_banner_container">
+						<div class="index_top_banner_container_warp">
+							<div class="index_top_banner_text">
+								<p class="index_top_banner_sub_title">contrast</p>
+								<p class="index_top_banner_title01">captivated</p>
+								<p class="index_top_banner_title02">by that beayty</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			<!-- 인덱스 - 메인 배너 컨트롤러 z-1 -->
+			<div class="index_top_banner_controler_container">
+				<div class="index_top_banner_controler">
+					<a class="index_top_banner_prev" href="#prev">&#10094;</a>
+					<a class="index_top_banner_next" href="#next">&#10095;</a>
+				</div>
+
+				<!-- 인덱스 - 메인 배너 페이징 z-1 -->
+				<div class="index_top_banner_dot_outer">
+					<button class="index_top_banner_dots dots_on"></button>
+					<button class="index_top_banner_dots"></button>
+					<button class="index_top_banner_dots"></button>
+					<button class="index_top_banner_dots"></button>
+					<button class="index_top_banner_dots"></button>
+				</div>
+			</div>
+        </ul>
+		
+
+        <span class="index_top_banner_scroll_down_text">scroll down</span>
+
+        <div class="index_top_banner_scroll_down">
+            <button class="index_top_banner_scroll_down_btn_circle">
+                <div class="index_top_banner_scroll_down_btn_arrow">
+                    <i class="material-icons">arrow_downward</i>
+                </div>
+            </button>
+        </div>
+    </div>
+    
+		<!-- 인덱스 - 사운드 박스 -->
+		<div class="index_sound_box">
+			<div class="index_sound_box_outer">
+				<span class="index_sound_title">a vision of sound</span>
+				<button class="index_sound_box_btn">
+					<i class="material-icons">pause</i>
+				</button>
+				<sapn class="index_sound_box_bottom_text">* 최상의 경험을 위해 오디오 사용을 권장합니다.</sapn>
+			</div>
+		</div>
+
+		<!-- 인덱스 - ALCHEMY 배너 -->
+		<div class="index_banner_alchemy">
+
+			<div class="index_banner_wrap">
+
+				<div class="index_banner_alchemy_img">
+					<div class="index_banner_alchemy_text_wrap">
+						<div class="index_banner_text_container">
+							<div class="index_banner_sub_title">무한한 변화의 혁명</div>
+							<div class="index_banner_alchemy_title index_banner_title">
+								<h2>alchemy</h2>
+							</div>
+							<div class="index_banner_alchemy_writing">
+								<p>큰 가치로의 변화.<br>그 일련의 과정들은 마치 연금술과 같습니다.</p>
+							</div>
+
+							<a href="#" class="reanmore_button_white reanmore_button">
+								<p>Rean More</p>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 인덱스 - 사운드 스토리 -->
+		<div class="index_soundstories">
+
+			<div class="index_soundstories_part_01">
+				<!-- 인덱스 - 사운드 스토리 - 이미지 01 -->
+				<div class="index_soundstories_img_01_wrap">
+					<div class="index_soundstories_img_01" style="background-image: url(../zeplin_img/index/sound_stories/sound_stories_01.png);"></div>
+				</div>
+
+				<!-- 인덱스 - 사운드 스토리 - 이미지 텍스트 01 -->
+				<div class="index_soundstories_text_outer_01">
+					<h2 class="index_soundstories_title">
+					sound<br>stories
+					</h2>
+					<p class="index_soundstories_writing_01 index_soundstories_writing">
+					톤마이스터 제프 마틴은 BANG & OULFSEN의 각 제품이 완벽한 사운드를 얻을 수 있도록 노력하는 훌륭한 파트너 입니다. 그는 <strong>"자신의 직업은 끊임 없이 실망하는 것"</strong>이라 말합니다. </p>
+				</div>
+
+				<!-- 인덱스 - 사운드 스토리 - 이미지 02 -->
+				<div class="index_soundstories_img_02_wrap">
+					<div class="index_soundstories_img_02" style="background-image: url(../zeplin_img/index/sound_stories/sound_stories_02.png);">
+						<span>Geoff Martin</span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="index_soundstories_part_02">
+			<!-- 인덱스 - 사운드 스토리 - 이미지 텍스트 02 -->
+
+				<div class="index_soundstories_text_outer_02">
+					<h3 class="index_soundstories_sub_title">
+						공예, 디자인,<br>사운드의 연금술
+					</h3>
+					<p class="index_soundstories_writing_02 index_soundstories_writing">
+						제프는 잘 듣는 사람입니다.<br>
+						실제로 그는 청각적 감각이 너무 뛰어나기 때문에 톤마이너가 그의 직업이 되었습니다.</p>
+				</div>
+
+				<!-- 인덱스 - 사운드 스토리 - 이미지 03 -->
+				<div class="index_soundstories_img_03_wrap">
+					<div class="index_soundstories_img_03" style="background-image: url(../zeplin_img/index/sound_stories/sound_stories_03.png);"></div>
+				</div>
+			</div>
+
+
+
+			<div class="index_soundstories_part_03">
+				<!-- 인덱스 - 사운드 스토리 - 이미지 04 -->
+				<div class="index_soundstories_img_04_wrap">
+					<div class="index_soundstories_img_04" style="background-image: url(../zeplin_img/index/sound_stories/sound_stories_04.png);"></div>
+				</div>
+
+				<!-- 인덱스 - 사운드 스토리 - 이미지 텍스트 04 -->
+				<div class="index_soundstories_text_outer_03">
+					<p class="index_soundstories_writing_03 index_soundstories_writing">
+					Bang & Olufsen 제품 만들기는 상상력 연금술의 일종입니다. 창조적 인 협업을 통해 사운드, 디자인, 공예의 요소가 그 부분의 합보다 큰 전체로 바뀝니다. 그 마법을 실현하려면 가장 열정적 인 전문가 만이 필요합니다. 그래서 Geoff가 등장합니다. 엔지니어 팀과 함께, 그는 설계 중에 새로운 스피커와 헤드폰의 소리를 끊임없이 테스트합니다.
+					</p>
+
+					<!-- rean more -->
+					<a href="#">
+						<div class="reanmore_button">
+							<p>Rean More</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- 인덱스 - 팟캐스트 -->
+		<div class="index_main_banner_potcast">
+				<!-- 팟캐스트 이미지 -->
+				<ol class="index_main_banner_potcast_img_outer">
+					<li class="index_main_banner_potcast_img_list">  
+						<div class="index_main_banner_potcast_img">  <!--테이블-->
+							<!-- 팟캐스트 타이틀 --> <!--테이블 셀-->
+							<div class="index_main_banner_potcast_title_wrap">
+								<p class="index_main_banner_potcast_title">potcast</p>
+							</div>
+						</div>
+					</li>
+				</ol>
+
+				<div class="index_main_banner_potcast_container">
+
+					<!-- 팟캐스트 배너 텍스트 -->
+					<ol class="index_main_banner_potcast_sub_title_outer">
+						<li class="index_main_banner_potcast_sub_title">
+							<p>sound matters episode 25</p>
+						</li>
+					</ol>
+
+					<!-- 페이징 텍스트 -->
+					<ol class="index_main_banner_pageing_outer">
+						<li class="index_main_banner_potcast_pageing_text">
+							<p>a novel sound</p>
+						</li>
+					</ol>
+
+					<!-- 페이징 버튼 -->
+					<div class="index_main_banner_potcast_pageing_button">
+						<button class="index_main_banner_potcast_pageing_button_prev">
+							<i class="material-icons">chevron_left</i>
+						</button>
+
+						<button class="index_main_banner_potcast_pageing_button_next">
+							<i class="material-icons">chevron_right</i>
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+
+	   <!-- 인덱스 - 추천 카테고리 -->
+		<div class="index_main_featured_categories">
+			<!-- 인덱스 - 추천 카테고리 - 컨테이너 -->
+			<div class="index_main_featured_categories_container">
+				<!-- 인덱스 - 추천 카테고리 - 그룹1 -->                                  
+				<div class="index_main_categories_outer01">
+					<div class="index_main_categories">
+						<div class="index_featured_categories_title_wrap" style="background-image: url(../zeplin_img/index/featured_categories/featured_categories.jpg)">
+							<div class="index_featured_categories_title_inner">
+								<div class="index_featured_categories_title_inner_wrap">
+									<h2>featured<br>categories</h2>
+								</div>
+							</div>
+						</div>
+					</div>   
+					<div class="index_main_categories">
+						<a href="#" class="index_featured_categories_wrap" style="background-image: url(../zeplin_img/index/featured_categories/featured_categories_speaker.jpg)">
+							<div class="index_featured_categories_inner">
+								<h2>speaker</h2>
+							</div>
+						</a>
+					</div>
+					<div class="index_main_categories">
+						<a href="#" class="index_featured_categories_wrap" style="background-image: url(../zeplin_img/index/featured_categories/featured_categories_headphone.jpg)">
+							<div class="index_featured_categories_inner">
+								<h2>headphone</h2>
+							</div>
+						</a>
+					</div>
+				</div>                                
+
+				<!-- 인덱스 - 추천 카테고리 - 그룹2 -->                                  
+				<div class="index_main_categories_outer02">
+					<div class="index_main_categories">
+						<a href="#" class="index_featured_categories_wrap_align" style="background-image: url(../zeplin_img/index/featured_categories/featured_categories_tv.jpg)">
+							<div class="index_featured_categories_inner">
+								<h2>tv</h2>
+							</div>
+						</a>
+					</div>
+					<div class="index_main_categories">
+						<a href="#" class="index_featured_categories_wrap_align" style="background-image: url(../zeplin_img/index/featured_categories/featured_categories_accessory.jpg)">
+							<div class="index_featured_categories_inner">
+								<h2>accessory</h2>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 인덱스 - 스피커 배너 -->
+		<div class="index_banner_speaker">
+
+			<div class="index_banner_wrap">
+
+				<div class="index_banner_speaker_img">
+					<div class="index_banner_speaker_text_wrap">
+						<div class="index_banner_text_container">
+							<div class="index_banner_sub_title">일상. 평온. 늘 한결같이.</div>
+							<div class="index_banner_speaker_title index_banner_title">
+								<h2>speaker</h2>
+							</div>
+
+
+							<a href="#" class="reanmore_button_white reanmore_button">
+								<p>Rean More</p>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- 인덱스 - 스피커 카드 -->
+			<ul class="index_main_item_card_container">
+
+				<!-- 카드 1 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/speaker/03.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beosound Stage</h3>
+							<p class="index_main_item_card_price">시작 : 1,940,000원</p>
+						</div>
+					</a>
+				</li>
+				<!-- 카드 2 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/speaker/06.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beoplay E8 2.0 and Charging Pad</h3>
+							<p class="index_main_item_card_price">시작 : 3,230,000원</p>
+						</div>
+					</a>
+				</li>
+				<!-- 카드 3 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/speaker/04.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beosound 2 with the Google Assistant</h3>
+							<p class="index_main_item_card_price">시작 : 2,590,000원</p>
+						</div>
+					</a>
+				</li>
+				<!-- 카드 4 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/speaker/15.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beoplay A1</h3>
+							<p class="index_main_item_card_price">323,857원</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+
+		<!-- 인덱스 - 헤드폰 배너 -->
+		<div class="index_banner_headphone">
+
+			<div class="index_banner_wrap">
+
+				<div class="index_banner_headphone_img">
+					<div class="index_banner_headphone_text_wrap">
+						<div class="index_banner_text_container">
+							<div class="index_banner_sub_title">산책. 여행. 언제 어디서나.</div>
+							<div class="index_banner_headphone_title index_banner_title">
+								<h2>headphone</h2>
+							</div>
+
+
+							<a href="#" class="reanmore_button_white reanmore_button">
+								<p>Rean More</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- 인덱스 - 헤드폰 카드 -->
+			<ul class="index_main_item_card_container">
+
+				<!-- 카드 1 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/headphone/01_Beoplay_H9%203rd_gen.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beosound Stage</h3>
+							<p class="index_main_item_card_price">시작 : 1,940,000원</p>
+						</div>
+					</a>
+				</li>
+
+				<!-- 카드 2 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/headphone/04_Beoplay_H4%202nd_gen.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beoplay E8 2.0 and Charging Pad</h3>
+							<p class="index_main_item_card_price">시작 : 3,230,000원</p>
+						</div>
+					</a>
+				</li>
+
+				<!-- 카드 3 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/headphone/02_1017_ALYX%209SM_Beoplay_E8_Motion.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beosound 2 with the Google Assistant</h3>
+							<p class="index_main_item_card_price">시작 : 2,590,000원</p>
+						</div>
+					</a>
+				</li>
+
+				<!-- 카드 4 -->
+				<li class="index_main_item_card_list">
+					<a href="#">
+						<div class="index_main_item_card_img">
+							<img src="../zeplin_img/index/headphone/07_Beoplay_E6.png">
+						</div>
+						<div class="index_main_item_card_text_outer">
+							<h3 class="index_main_item_card_title">Beoplay A1</h3>
+							<p class="index_main_item_card_price">323,857원</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+
+		<!-- 인덱스 - 구독 -->
+		<div class="index_main_subscribe_wrap">
+			<div class="index_main_subscribe">
+
+				<!-- 인덱스 - 구독 이미지 -->
+				<div class="index_main_subscribe_img" style="background-image: url(../zeplin_img/index/banner/subscribe_06.jpg);">
+				</div>
+
+				<!-- 인덱스 - 구독 - 텍스트박스 -->
+				<div class="index_main_subscribe_text_box_wrap">
+
+					<div class="index_main_subscribe_top_text" style="background-image: url(../zeplin_img/index/banner/subscribe_07.jpg)">
+						<p>Sign up for our newsletter<br>to receive customized product news,<br><br>updates and special invites.</p>
+
+						<!-- 인덱스 - 구독 버튼 -->
+						<a href="#" class="index_main_subscribe_button">
+							<h4>subscribe</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 인덱스 - 인스타 -->
+		<div class="index_main_insta">
+			<h2 class="index_main_insta_title"># instagram</h2>
+
+			<!-- 인덱스 - 인스타 컨텐츠 -->
+			<ul class="index_main_insta_box_outer">
+
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_01.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_02.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_03.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_04.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_05.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_06.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_07.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_08.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_09.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_10.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_11.png">
+					</a>
+				</li>
+				<li class="index_main_insta_box">
+					<a href="#">
+						<img src="../zeplin_img/index/insta/insta_12.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--#############################################
+							모바일
+		###########################################-->
+
+		<!--                                               -->
+		<!--============== [ 모바일 - 풋터 ] ================-->
+		<!--                                               -->
+
+		<footer class="mobile_index_footer">
+			<div class="mobile_index_footer_outer">
+
+				<!-- 모바일 - 풋터 로고 -->
+				<div class="mobile_index_footer_top_logo">
+					<a href="#">
+						<img src="../zeplin_img/index/logo/Bang_and_Olufsen_block_white.svg">
+					</a>
+				</div>
+
+				<!-- 모바일 - 풋터 텍스트 -->
+				<div class="mobile_index_footer_text_outer">
+
+					<div class="mobile_index_footer_box_outer_01">
+						<!-- 모바일 - 풋터 - 텍스트 1 -->
+						<div class="mobile_index_footer_text_box_wrap">
+							<div class="mobile_index_footer_text_box">
+								<div class="mobile_index_footer_text_title">
+									<p>고객 관리</p>
+								</div>
+								<div class="mobile_index_footer_text_01">
+									<p><a href="#" class="footer_aColor_fff">로그인/등록</a></p>
+									<p><a href="#" class="footer_aColor_fff">반품/교환</a></p>
+									<p><a href="#" class="footer_aColor_fff">매장 찾기</a></p>
+									<p><a href="#" class="footer_aColor_fff">배송 정보</a></p>
+									<p><a href="#" class="footer_aColor_fff">위조</a></p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 모바일 - 풋터 - 텍스트 2 -->
+						<div class="mobile_index_footer_text_box_wrap">
+							<div class="mobile_index_footer_text_box">
+								<div class="mobile_index_footer_text_title">
+									<p>회사 정책</p>
+								</div>
+								<div class="mobile_index_footer_text_02">
+									<p><a href="#" class="footer_aColor_fff">개인 정보 정책</a></p>
+									<p><a href="#" class="footer_aColor_fff">이용 약관</a></p>
+									<p><a href="#" class="footer_aColor_fff">쿠키</a></p>
+									<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mobile_index_footer_box_outer_02">
+						<!-- 모바일 - 풋터 - 텍스트 3 -->
+						<div class="mobile_index_footer_text_box_wrap">
+							<div class="mobile_index_footer_text_box">
+								<div class="mobile_index_footer_text_title">
+									<p>회사 소개</p>
+								</div>
+								<div class="mobile_index_footer_text_03">
+									<p><a href="#" class="footer_aColor_fff">회사 소개</a></p>
+									<p><a href="#" class="footer_aColor_fff">보도 자료</a></p>
+									<p><a href="#" class="footer_aColor_fff">기업 사이트</a></p>
+									<p><a href="#" class="footer_aColor_fff">투자자 정보</a></p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 모바일 - 풋터 - 텍스트 4 -->
+						<div class="mobile_index_footer_text_box_wrap">
+						<div class="mobile_index_footer_text_box">
+							<div class="mobile_index_footer_text_title">
+								<p></p>
+							</div>
+							<div class="mobile_index_footer_text_04">
+								<p><a href="#" class="footer_aColor_fff">구인 정보</a></p>
+								<p><a href="#" class="footer_aColor_fff">B2B</a></p>
+								<p><a href="#" class="footer_aColor_fff">Latest Magazine</a></p>
+								<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<!-- 모바일 - 풋터 - 구분 선 -->
+				<div class="mobile_line_wrap">
+					<div class="mobile_line"></div>
+				</div>
+
+
+				<!-- 모바일 - 풋터 다운로드 -->
+				<div class="mobile_index_footer_download_link_wrap">
+					<div class="mobile_index_footer_download">
+						<p><a href="#" class="footer_aColor_fff">iOS용 앱 다운로드</a></p>
+						<p><a href="#" class="footer_aColor_fff">Android용 앱 다운로드</a></p>
+						<p><a href="#" class="footer_aColor_fff">iOS AR Experience</a></p>
+					</div>
+				</div>
+
+
+				<!-- 모바일 - 풋터 sns 링크 -->
+				<div class="mobile_index_footer_sns_link_wrap">
+					<ul class="mobile_index_footer_sns_link_outer">
+						<li class="mobile_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-facebook-4.svg">
+							</a>
+						</li>
+						<li class="mobile_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-instagram-9.svg">
+							</a>
+						</li>
+						<li class="mobile_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-twitter-4.svg">
+							</a>
+						</li>
+						<li class="mobile_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-youtube-9.svg">
+							</a>
+						</li>
+						<li class="mobile_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-pinterest-4.svg">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- 모바일 - 풋터 하단 -->
+			<div class="mobile_index_footer_bottom_box">
+				<h4>© Bang & Olufsen 2020</h4>
+			</div>
+		</footer>
+
+		<!--#############################################
+							태블릿
+		###########################################-->
+
+		<!--                                               -->
+		<!--============== [ 태블릿 - 풋터 ] ================-->
+		<!--                                               -->
+
+		<footer class="tablet_index_footer">
+			<div class="tablet_index_footer_outer">
+
+				<!-- 태블릿 - 풋터 로고 -->
+				<div class="tablet_index_footer_top_logo">
+					<a href="#">
+						<img src="../zeplin_img/index/logo/Bang_and_Olufsen_block_white.svg">
+					</a>
+				</div>
+
+				<!-- 태블릿 - 풋터 텍스트 -->
+				<div class="tablet_index_footer_text_outer">
+
+					<div class="tablet_index_footer_box_outer_01">
+						<!-- 태블릿 - 풋터 - 텍스트 1 -->
+						<div class="tablet_index_footer_text_box_wrap">
+							<div class="tablet_index_footer_text_box">
+								<div class="tablet_index_footer_text_title">
+									<p>고객 관리</p>
+								</div>
+								<div class="tablet_index_footer_text_01">
+									<p><a href="#" class="footer_aColor_fff">로그인/등록</a></p>
+									<p><a href="#" class="footer_aColor_fff">반품/교환</a></p>
+									<p><a href="#" class="footer_aColor_fff">매장 찾기</a></p>
+									<p><a href="#" class="footer_aColor_fff">배송 정보</a></p>
+									<p><a href="#" class="footer_aColor_fff">위조</a></p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 태블릿 - 풋터 - 텍스트 2 -->
+						<div class="tablet_index_footer_text_box_wrap">
+							<div class="tablet_index_footer_text_box">
+								<div class="tablet_index_footer_text_title">
+									<p>회사 정책</p>
+								</div>
+								<div class="tablet_index_footer_text_02">
+									<p><a href="#" class="footer_aColor_fff">개인 정보 정책</a></p>
+									<p><a href="#" class="footer_aColor_fff">이용 약관</a></p>
+									<p><a href="#" class="footer_aColor_fff">쿠키</a></p>
+									<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+								</div>
+							</div>
+						</div>
+						<!-- 태블릿 - 풋터 - 텍스트 3 -->
+						<div class="tablet_index_footer_text_box_wrap">
+							<div class="tablet_index_footer_text_box">
+								<div class="tablet_index_footer_text_title">
+									<p>회사 소개</p>
+								</div>
+								<div class="tablet_index_footer_text_03">
+									<p><a href="#" class="footer_aColor_fff">회사 소개</a></p>
+									<p><a href="#" class="footer_aColor_fff">보도 자료</a></p>
+									<p><a href="#" class="footer_aColor_fff">기업 사이트</a></p>
+									<p><a href="#" class="footer_aColor_fff">투자자 정보</a></p>
+									<p><a href="#" class="footer_aColor_fff">구인 정보</a></p>
+									<p><a href="#" class="footer_aColor_fff">B2B</a></p>
+									<p><a href="#" class="footer_aColor_fff">Latest Magazine</a></p>
+									<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 태블릿 - 풋터 - 구분 선 -->
+				<div class="tablet_line_wrap">
+					<div class="tablet_line"></div>
+				</div>
+
+
+				<!-- 태블릿 - 풋터 다운로드 -->
+				<div class="tablet_index_footer_download_link_wrap">
+					<div class="tablet_index_footer_download">
+						<p><a href="#" class="footer_aColor_fff">iOS용 앱 다운로드</a></p>
+						<p><a href="#" class="footer_aColor_fff">Android용 앱 다운로드</a></p>
+						<p><a href="#" class="footer_aColor_fff">iOS AR Experience</a></p>
+					</div>
+				</div>
+
+
+				<!-- 태블릿 - 풋터 sns 링크 -->
+				<div class="tablet_index_footer_sns_link_wrap">
+					<ul class="tablet_index_footer_sns_link_outer">
+						<li class="tablet_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-facebook-4.svg">
+							</a>
+						</li>
+						<li class="tablet_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-instagram-9.svg">
+							</a>
+						</li>
+						<li class="tablet_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-twitter-4.svg">
+							</a>
+						</li>
+						<li class="tablet_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-youtube-9.svg">
+							</a>
+						</li>
+						<li class="tablet_index_footer_sns_link">
+							<a href="#">
+								<img src="../zeplin_img/icon/sns/iconmonstr-pinterest-4.svg">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- 태블릿 - 풋터 하단 -->
+			<div class="tablet_index_footer_bottom_box">
+				<h4>© Bang & Olufsen 2020</h4>
+			</div>
+		</footer>
+
+		<!--#############################################
+							데스크탑
+		###########################################-->
+		<!--                                               -->
+		<!--============== [ 데스크탑 - 풋터 ] ================-->
+		<!--                                               -->
+
+		<footer class="desktop_index_footer">
+			<div class="desktop_index_footer_outer">
+				<div class="desktop_index_footer_container">
+					<!-- 풋터 로고 -->
+					<div class="desktop_index_footer_top_logo">
+						<a href="#">
+							<img src="../zeplin_img/index/logo/Bang_and_Olufsen_block_white.svg">
+						</a>
+					</div>
+
+					<!-- 풋터 텍스트 -->
+					<div class="desktop_index_footer_text_outer">
+
+							<!-- 데스크탑 - 텍스트 1 -->
+							<div class="desktop_index_footer_text_box_wrap">
+								<div class="desktop_index_footer_text_box">
+									<div class="desktop_index_footer_text_title">
+										<p>고객 관리</p>
+									</div>
+									<div class="desktop_index_footer_text_01">
+										<p><a href="#" class="footer_aColor_fff">로그인/등록</a></p>
+										<p><a href="#" class="footer_aColor_fff">반품/교환</a></p>
+										<p><a href="#" class="footer_aColor_fff">매장 찾기</a></p>
+										<p><a href="#" class="footer_aColor_fff">배송 정보</a></p>
+										<p><a href="#" class="footer_aColor_fff">위조</a></p>
+									</div>
+								</div>
+							</div>
+
+							<!-- 데스크탑 - 텍스트 2 -->
+							<div class="desktop_index_footer_text_box_wrap">
+								<div class="desktop_index_footer_text_box">
+									<div class="desktop_index_footer_text_title">
+										<p>회사 정책</p>
+									</div>
+									<div class="desktop_index_footer_text_02">
+										<p><a href="#" class="footer_aColor_fff">개인 정보 정책</a></p>
+										<p><a href="#" class="footer_aColor_fff">이용 약관</a></p>
+										<p><a href="#" class="footer_aColor_fff">쿠키</a></p>
+										<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+									</div>
+								</div>
+							</div>
+
+							<!-- 데스크탑 - 텍스트 3 -->
+							<div class="desktop_index_footer_text_box_wrap">
+								<div class="desktop_index_footer_text_box">
+									<div class="desktop_index_footer_text_title">
+										<p>회사 소개</p>
+									</div>
+									<div class="desktop_index_footer_text_03">
+										<p><a href="#" class="footer_aColor_fff">회사 소개</a></p>
+										<p><a href="#" class="footer_aColor_fff">보도 자료</a></p>
+										<p><a href="#" class="footer_aColor_fff">기업 사이트</a></p>
+										<p><a href="#" class="footer_aColor_fff">투자자 정보</a></p>
+										<p><a href="#" class="footer_aColor_fff">구인 정보</a></p>
+										<p><a href="#" class="footer_aColor_fff">B2B</a></p>
+										<p><a href="#" class="footer_aColor_fff">Latest Magazine</a></p>
+										<p><a href="#" class="footer_aColor_fff">Accessibility</a></p>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="desktop_index_footer_right_wrap">
+						<!-- 데스크탑 - 풋터 다운로드 -->
+						<div class="desktop_index_footer_download_link_wrap">
+							<div class="desktop_index_footer_download">
+								<p><a href="#" class="footer_aColor_fff">iOS용 앱 다운로드</a></p>
+								<p><a href="#" class="footer_aColor_fff">Android용 앱 다운로드</a></p>
+								<p><a href="#" class="footer_aColor_fff">iOS AR Experience</a></p>
+							</div>
+						</div>
+
+
+						<!-- 데스크탑 - 풋터 sns 링크 -->
+						<div class="desktop_index_footer_sns_link_wrap">
+							<ul class="desktop_index_footer_sns_link_outer">
+								<li class="desktop_index_footer_sns_link">
+									<a href="#">
+										<img src="../zeplin_img/icon/sns/iconmonstr-facebook-4.svg">
+									</a>
+								</li>
+								<li class="desktop_index_footer_sns_link">
+									<a href="#">
+										<img src="../zeplin_img/icon/sns/iconmonstr-instagram-9.svg">
+									</a>
+								</li>
+								<li class="desktop_index_footer_sns_link">
+									<a href="#">
+										<img src="../zeplin_img/icon/sns/iconmonstr-twitter-4.svg">
+									</a>
+								</li>
+								<li class="desktop_index_footer_sns_link">
+									<a href="#">
+										<img src="../zeplin_img/icon/sns/iconmonstr-youtube-9.svg">
+									</a>
+								</li>
+								<li class="desktop_index_footer_sns_link">
+									<a href="#">
+										<img src="../zeplin_img/icon/sns/iconmonstr-pinterest-4.svg">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+					<!-- 데스크탑 - 풋터 하단 -->
+					<div class="desktop_index_footer_bottom_box">
+						<h4>© Bang & Olufsen 2020</h4>
+					</div>
+			</div>
+		</footer>
+	
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<!--    <link rel="stylesheet" href="./index_top_banner.css">-->
+    <link rel="stylesheet" href="./index_top_banner2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="./jquery/jquery.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$(".index_top_banner_infinite").animate({
+				"left" : "-=1920px"
+			});
+			
+			$(".index_top_banner_next").on("click", function(){
+				var topBannerDot_index = $(".index_top_banner_dots").index($(".top_banner_on"));
+				var topBannerDot_nextIndex = topBannerDot_index + 1;
+				console.log("index", topBannerDot_index);
+				console.log("next_index", topBannerDot_nextIndex);
+				
+				$(".index_top_banner_dots").eq(topBannerDot_index).removeClass("top_banner_on");
+				$(".index_top_banner_dots").eq(topBannerDot_nextIndex).addClass("top_banner_on");
+			})
+		})
+	</script>
+</head>
+
+<body>
+
+     <!-- 인덱스 - 배너 -->
+     <div class="index_top_banner_outer">
+        <!-- 인덱스 - 메인 배너 리스트 z-0 -->
+        <ul class="index_top_banner_list">
+            <li class="index_top_banner"> <!-- 이미지 -->
+               
+                <div class="index_top_banner_container">
+                   <div class="index_top_banner_container_warp">
+						<!-- 인덱스 - 메인 배너 텍스트 -->
+						<div class="index_top_banner_text">
+							<p class="index_top_banner_sub_title">the</p>
+							<p class="index_top_banner_title01">variation is</p>
+							<p class="index_top_banner_title02">infinite</p>
+						</div>
+					</div>
+               
+               		<!-- 인덱스 - 메인 배너 컨트롤러 z-1 -->
+					<div class="index_top_banner_controler">
+						<button class="index_top_banner_prev">
+							<i class="material-icons">keyboard_arrow_left</i>
+						</button>
+
+						<button class="index_top_banner_next">
+							<i class="material-icons">keyboard_arrow_right</i>
+						</button>
+					</div>
+                </div>
+            </li>
+            
+		</ul>
+
+        <!-- 인덱스 - 메인 배너 페이징 z-1 -->
+        <div class="index_top_banner_dot_outer">
+            <button class="index_top_banner_dots top_banner_on"></button>
+            <button class="index_top_banner_dots"></button>
+            <button class="index_top_banner_dots"></button>
+            <button class="index_top_banner_dots"></button>
+            <button class="index_top_banner_dots"></button>
+        </div>
+
+        <span class="index_top_banner_scroll_down_text">scroll down</span>
+
+        <div class="index_top_banner_scroll_down">
+            <button class="index_top_banner_scroll_down_btn_circle">
+                <div class="index_top_banner_scroll_down_btn_arrow">
+                    <i class="material-icons">arrow_downward</i>
+                </div>
+            </button>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+</body>
+
+</html>

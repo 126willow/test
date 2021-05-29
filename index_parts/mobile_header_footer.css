@@ -1,0 +1,391 @@
+/* css reset */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'lato', '나눔고딕', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
+}
+
+/** {
+	box-sizing: border-box;
+	border: 1px solid red;
+}*/
+
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+select {
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* FORM RESET */
+input {
+	/*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+	outline: none;
+}
+
+header {
+	font-size: 1.4rem;
+	line-height: 24px;
+	color: #fff;
+}
+
+body {
+	font-weight: normal;
+
+	position: relative;
+
+	background-color: coral;
+}
+
+body,
+footer {
+	font-size: 1.4rem;
+}
+
+
+
+/* ##########################################
+					모바일
+############################################# */
+
+/* ============== [ 모바일 - 헤더 z-2 ] ================ */
+
+.mobile_index_header {
+	width: 100%;
+	min-width: 360px;
+	height: 64px;
+
+	line-height: 16px;
+
+	background-color: rgba(0, 0, 0, 0);
+
+	/*   position: absolute;
+    top: 0;
+    left: 0;*/
+
+	z-index: 2;
+}
+
+.mobile_index_header_outer {
+	width: 100%;
+    min-width: 360px;
+
+	height: 100%;
+
+	margin: 0 auto;
+	line-height: 64px;
+	text-align: center;
+
+	position: relative;
+}
+
+/* 왼쪽 버튼 */
+.mobile_index_header_left_nav_outer {
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: inline-block;
+
+	margin-left: 16px;
+}
+
+.mobile_index_header_nav_berger {
+	height: 100%;
+	vertical-align: top;
+	background-color: rgba(0, 0, 0, 0);
+
+	display: inline-block;
+}
+
+.mobile_index_header_nav_berger .material-icons {
+	vertical-align: top;
+	color: #fff;
+}
+
+
+/* 로고 */
+
+.mobile_index_header_logo_outer {
+	height: 100%;
+	display: inline-block;
+
+}
+
+.mobile_index_header_logo img {
+	vertical-align: bottom;
+}
+
+.mobile_index_header_logo {
+	line-height: 100%;
+}
+
+/* 오른쪽 버튼 */
+.mobile_index_header_right_nav_outer {
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	margin-right: 16px;
+}
+
+.mobile_index_header_right_nav_outer .material-icons {
+	vertical-align: top;
+	color: #fff;
+}
+
+
+/* ============== [ 모바일 - 풋터 ] ================ */
+
+.mobile_index_footer {
+	width: 100%;
+	min-width: 360px;
+	background: #000;
+
+	margin: 60px 0 100px 0;
+}
+
+.mobile_index_footer_outer {
+	width: 100%;
+	color: #fff;
+
+	box-sizing: border-box;
+	padding: 0 16px;
+}
+
+.mobile_index_footer_outer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 풋터 로고 */
+.mobile_index_footer_top_logo {
+	width: 60px;
+	margin: 0 auto;
+
+	padding: 30px 0 20px 0;
+}
+
+.mobile_index_footer_top_logo img {
+	width: 100%;
+}
+
+.mobile_index_footer_text_outer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 텍스트 1 */
+.mobile_index_footer_text_box_01 {
+	width: 164px;
+	height: 170px;
+
+	box-sizing: border-box;
+	padding-left: 48px;
+
+	float: left;
+	margin: 20px 0;
+}
+
+
+
+.mobile_index_footer_text_title_01 {
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+
+.mobile_index_footer_text_01 p {
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+/* 텍스트 2 */
+.mobile_index_footer_text_box_02 {
+	width: 164px;
+	height: 170px;
+
+	box-sizing: border-box;
+	padding-left: 48px;
+
+	float: left;
+	margin: 20px 0;
+
+}
+
+.mobile_index_footer_text_title_02 {
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+
+.mobile_index_footer_text_02 p {
+	text-transform: capitalize;
+	font-weight: normal;
+	margin: 12px 0 10px 0;
+}
+
+/* 텍스트 3-1 */
+.mobile_index_footer_text_box_03 {
+	width: 164px;
+	height: 170px;
+
+	box-sizing: border-box;
+	padding-left: 48px;
+
+	float: left;
+	margin: 20px 0;
+}
+
+.mobile_index_footer_text_title_03 {
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+
+.mobile_index_footer_text_03 p {
+	text-transform: capitalize;
+	font-weight: normal;
+	margin: 12px 0 10px 0;
+}
+
+/* 텍스트 3-2 */
+.mobile_index_footer_text_box_04 {
+	width: 164px;
+	height: 170px;
+
+	box-sizing: border-box;
+	padding-left: 48px;
+
+	float: left;
+	margin: 20px 0;
+}
+
+.mobile_index_footer_text_title_04 {
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+
+.mobile_index_footer_text_04 {
+	margin-top: 28px;
+}
+
+.mobile_index_footer_text_04 p {
+	text-transform: capitalize;
+	font-weight: normal;
+	margin: 12px 0 10px 0;
+}
+
+/* 구분 선 */
+.mobile_line_wrap {
+	padding: 0 34px;
+}
+
+.mobile_line {
+	width: 100%;
+	border-bottom: 1px solid #303030;
+
+	margin: 20px 0;
+}
+
+
+/* 풋터 다운로드 */
+.mobile_index_footer_download_link_wrap {
+	text-align: center;
+	margin: 40px 0;
+
+}
+
+.mobile_index_footer_download {
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+
+	margin: 0 22px;
+}
+
+.mobile_index_footer_download p {
+	text-transform: capitalize;
+	padding-bottom: 10px;
+}
+
+/* 풋터 sns 링크 */
+.mobile_index_footer_sns_link_wrap {
+	text-align: center;
+	display: inline-block;
+
+	margin: 28px 22px 0 22px;
+}
+
+.mobile_index_footer_sns_link_outer {
+	display: inline-block;
+}
+
+.mobile_index_footer_sns_link_outer::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mobile_index_footer_sns_link {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 8px;
+}
+
+.mobile_index_footer_sns_link a {
+	width: 100%;
+	height: 30px;
+	display: inline-block;
+}
+
+.mobile_index_footer_sns_link img {
+	width: 100%;
+}
+
+/* 풋터 하단 */
+.mobile_index_footer_bottom_box {
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+}
+
+.mobile_index_footer_bottom_box h4 {
+	color: #aaa;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 60px;
+}

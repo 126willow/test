@@ -1,0 +1,316 @@
+/* css reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'lato', '나눔고딕', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+/*	overflow-x: hidden;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+select {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* FORM RESET */
+input {
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+    outline: none;
+}
+
+header {
+    line-height: 24px;
+    color: #fff;
+}
+
+body {
+    font-weight: normal;
+	box-sizing: border-box;
+	
+/*    position: relative;*/
+}
+
+
+body,
+header,
+footer {
+    
+    font-size: 1.4rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    border: 1px solid red !important;
+}
+
+
+
+
+
+
+
+
+/* ##########################################
+				인덱스 - 추천 카테고리
+############################################# */
+
+.index_main_featured_categories_container{padding: 80px 0;}
+
+.index_main_featured_categories_container::after{
+	content: "";
+    display: block;
+    clear: both;
+}
+
+.index_main_categories{
+    display: block;
+	
+	width: 50%;
+	    
+    float: left;
+	overflow: hidden;
+	
+	box-sizing: border-box;
+    padding: 8px;
+}
+
+/* 인덱스 - 추천 카테고리 - 타이틀 */
+.index_featured_categories_title_wrap{
+	display: table;
+	
+	width: 100%;
+	height: 156px;
+	
+	text-align: center;
+	
+	background: no-repeat center center;
+	background-size: cover;
+}
+
+.index_featured_categories_title_inner{
+	display: table-cell;
+	
+	vertical-align: middle;
+}
+
+.index_featured_categories_title_inner h2{
+	width: 134px;
+	margin: 0 auto;
+	
+	font-size: 2.2rem;
+	font-weight: 900;
+	line-height: 1.23;
+	text-align: left;
+}
+
+
+/* 인덱스 - 추천 카테고리 - 제품군들 */
+.index_featured_categories_wrap{
+	display: table;
+	
+	width: 100%;
+	height: 156px;
+	
+	text-align: center;
+	
+	background: no-repeat center center;
+	background-size: cover;
+}
+
+.index_featured_categories_wrap_align{
+	display: table;
+	
+	width: 100%;
+	height: 156px;
+	
+	text-align: center;
+	
+	background: no-repeat center center;
+	background-size: cover;
+}
+
+.index_featured_categories_inner{
+	display: table-cell;
+	
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	
+	vertical-align: middle;
+}
+
+.index_featured_categories_inner h2{
+	font-size: 2.0;
+	font-weight: normal;
+	color: #fff;
+}
+
+
+
+/* ##########################################
+   				   미디어 쿼리
+############################################# */
+
+@media all and (min-width: 360px){
+    .mobile_index_header {display: block;}
+    .mobile_index_footer {display: block;}
+
+    .desktop_index_header {display: none;}
+    .desktop_index_footer {display: none;}
+    
+    .index_banner_controler {display: none;}
+    
+    /* 인덱스 - 메인 배너 스크롤 다운 버튼 z-1 */
+    .index_banner_scroll_down_text{display: block;}
+    .index_banner_scroll_down{display: block;}
+}
+
+@media all and (min-width: 1024px){
+    .mobile_index_header {display: none;}
+    .mobile_index_footer {display: none;}
+    
+    .desktop_index_header {display: block;}
+    .desktop_index_footer {display: block;}
+    
+	
+	
+	
+	
+	/* ##########################################
+				인덱스 - 추천 카테고리
+	############################################# */
+	
+	.index_main_categories_outer01::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	.index_main_categories_outer02::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	.index_main_featured_categories_container{
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	
+	.index_main_featured_categories_container{padding: 100px 0;}
+	
+    .index_main_categories{
+		width: 33.33%;
+		box-sizing: border-box;
+		padding: 10px;
+	}		
+	
+	/* 인덱스 - 추천 카테고리 - 타이틀 */
+	.index_featured_categories_title_wrap{
+		height: 380px;
+	}
+
+	.index_featured_categories_title_inner h2{
+		width: 293px;
+
+		font-size: 4.8rem;
+	}
+	
+	/* 인덱스 - 추천 카테고리 - 제품군들 */	
+	.index_featured_categories_wrap{
+		height: 380px;
+
+		text-align: left;
+	}
+	
+	.index_featured_categories_wrap_align{
+		height: 380px;
+
+		text-align: right;
+	}
+	
+	.index_featured_categories_inner{
+		background-color: rgba(0,0,0,0);
+
+		vertical-align: bottom;
+	}
+
+	.index_featured_categories_inner h2{
+		box-sizing: border-box;
+		padding: 0 16px 18px 16px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+}
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

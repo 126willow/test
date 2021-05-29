@@ -1,0 +1,342 @@
+/* css reset */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-transform: uppercase;
+	box-sizing: border-box;
+    font-family: 'lato', '나눔고딕', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic', 'Droid sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+/*	overflow-x: hidden;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+select {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* FORM RESET */
+input {
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+    outline: none;
+}
+
+header {
+    line-height: 24px;
+    color: #fff;
+}
+
+body {
+    font-weight: normal;
+	box-sizing: border-box;
+	
+    position: relative;
+}
+
+
+body,
+header,
+footer {
+    
+    font-size: 1.4rem;
+}
+
+
+
+
+* {
+    border: 1px solid red !important;
+}
+
+
+/* ##########################################
+            재사용 - 정렬 버튼 & 셀렉트
+############################################# */
+.productList_card_array_btn{
+    width: 32px;
+    height: 32px;
+    
+    float: left;
+    
+    margin-right: 12px;
+}
+
+/* ============== [ 정렬 버튼 & 셀렉트 ] ================ */
+.productList_card_array {padding: 32px 16px 0 16px;}
+
+.productList_card_array_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_array_btn_wrap {
+	display: inline-block;
+	
+	float: left;
+}
+
+.productList_card_array_btn_wrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.productList_card_array_select_wrap{
+    float: right;
+    position: relative;
+    
+    z-index: 3;
+}
+
+.productList_card_array_select_wrap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_array_select_box{
+    width: 176px;
+    height: 32px;
+	
+    padding: 0 12px;
+	border: 1px solid #e6e6e6;
+        
+    float: left;
+}
+
+.productList_card_array_select_btn{
+    width: 32px;
+    height: 32px;
+    
+    text-align: center;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    z-index: 0;
+}
+
+.productList_card_array_select_btn .material-icons{
+    font-size: 2.4rem;
+    line-height: 32px;
+}
+
+
+/* ##########################################
+             재사용 - 제품 카드 리스트
+############################################# */
+
+.productList_card_list_outer {
+    width: 100%;
+    padding: 10px 8px;
+	
+    float: left;
+}
+
+.productList_card_list_outer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_list {
+    width: 50%;
+
+    float: left;
+    padding: 0 8px;
+}
+
+.productList_card_img {
+    width: 100%;
+
+    margin-bottom: 4px;
+}
+
+.productList_card_img img {width: 100%;}
+
+.productList_card_text_top{
+	width: 100%;
+	height: 20px;
+}
+.productList_card_text_top::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.productList_card_title {
+    font-weight: bold;
+    text-transform: capitalize;
+
+    float: left;
+}
+
+.productList_card_favorite_btn {display: none;}
+
+.productList_card_writing {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.productList_card_price {
+    font-size: 1.4rem;
+	padding: 10px 0;
+}
+
+
+
+
+
+
+@media all and (min-width: 1024px){
+	
+	/* ##########################################
+            재사용 - 정렬 버튼 & 셀렉트
+	############################################# */
+	
+	/* ============== [ 정렬 버튼 & 셀렉트 ] ================ */
+
+	
+	.productList_card_array {
+		display: inline-block;
+		float: right;
+		padding: 32px 0 0 0;
+	}
+	
+	/* ##########################################
+				 재사용 - 제품 카드 리스트
+	############################################# */
+
+	.productList_card_list_outer {padding : 0 10px;}
+
+	.productList_card_list {
+		width: 33.33%;
+
+		padding: 10px;
+	}
+
+	.productList_card_img {margin-bottom: 10px;}
+
+	.productList_card_text_top {height: 24px;}
+	
+	.productList_card_text_top::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.productList_card_title {font-size: 1.6rem;}
+
+	.productList_card_favorite_btn {
+		display: block;
+		
+		width: 24px;
+		height: 24px;
+		
+		float: right;
+	}
+
+	.productList_card_writing {font-size: 1.4rem;}
+
+	.productList_card_price {
+		font-size: 1.6rem;
+		padding: 14px 0;
+	}
+
+	
+	/* ============== [ 제품 카드 리스트 ] ================ */
+		
+	.productList_container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.productList_container::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	
+	.productList_card_list_container{
+		width: 880px;
+		
+		float: right;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
